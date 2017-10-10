@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Incluir Nomes</title>
+	<style type="text/css">
+		ul {
+			list-style-type:none;
+		}
+	</style>
+	<script type="text/javascript">
+		var nomes = ["Maria", "Pedro", "Marta"];
+		function add(){
+
+			
+			nomes.push(document.getElementById('nome').value);			
+			var tabelaFim = "<div id='tabela'><ul>";
+			var i = 0;
+
+			while(i<nomes.length){
+				tabelaFim += "<li>" + nomes[i] + "</li>";
+				i++;
+			}
+
+			tabelaFim += "</ul>	</div>";
+			document.getElementById('tabela').innerHTML = tabelaFim;
+			document.getElementById('nome').value = "";
+		}
+
+	</script>
+</head>
+<body>
+	<div id="tabela">
+		<ul>
+			<li>Maria</li>
+			<li>Pedro</li>
+			<li>Marta</li>
+		</ul>
+	</div>
+	<input type="text" id="nome">
+	<button onclick="add()">Add</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 12</title>
+	<script type="text/javascript">
+		function mudaCor(){
+			corEscolhida = document.getElementById('corescolhida').value;
+			switch(corEscolhida) {
+				case 'azul':
+					document.getElementById('paragrafos').style.backgroundColor = 'blue';
+					break;
+				case 'vermelha':
+					document.getElementById('paragrafos').style.backgroundColor = 'red';
+					break;
+				case 'verde':
+					document.getElementById('paragrafos').style.backgroundColor = 'green';
+					break;
+				default:
+					document.getElementById('paragrafos').style.backgroundColor = 'white';
+					break;
+			}
+		
+		}
+
+	</script>
+
+</head>
+<body>
+	<div id="paragrafos" border="1px">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illum recusandae quaerat repellendus, neque aliquam molestiae corporis voluptatum consectetur dicta provident minima adipisci rem esse, enim cumque tempore odit odio.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur inventore aliquid veniam in, sequi, explicabo quibusdam minus non officiis soluta minima ad perferendis eligendi! Error dolor modi amet aliquam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptates, ipsa facere perferendis. Error provident recusandae aliquid numquam possimus sunt voluptatibus reprehenderit enim nisi quisquam corporis nulla, maxime sequi repudiandae!</p>	
+	</div>
+	<input type="text" name="cor" id="corescolhida" placeholder="Escolha uma cor">
+	<button onclick="mudaCor()">Atualizar</button>
+
+	
+</body>
+</html>

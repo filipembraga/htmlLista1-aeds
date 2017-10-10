@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 11</title>
+	<script type="text/javascript">
+		function alertar(){
+			var escolha = window.confirm("Você tem coragem de respirar? tenho vírus");
+			if(escolha){
+				window.open('index1_11_2.html');
+				//Dúvidas sobre como selecionar nova aba e escrever na mesma a mensagem
+			}
+			else {
+				document.write('Você ainda está a salvo!');
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<a href="#" onMouseOver="alertar()" >VÍRUS MALUCO</a>
+	
+</body>
+</html>

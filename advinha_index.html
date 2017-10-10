@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Advinhação</title>
+	<script type="text/javascript">
+		function advinhar(){
+			var numeroPensado = Math.round(Math.random()*10);
+			var numeroUsuario = 0;
+
+			while(numeroPensado != numeroUsuario){
+				numeroUsuario = window.prompt("Advinhe o número!!");
+			}
+
+			window.alert('Você acertou!!')
+
+
+		}
+	</script>
+</head>
+<body>
+	<button onclick="advinhar()">Advinhar</button>
+	<label id="texto"></label>
+
+
+	
+</body>
+</html>

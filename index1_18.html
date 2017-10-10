@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script type="text/javascript" src="script1_18.js"></script>
+	</head>
+
+	<body>
+		<div>
+			num1: <input id="num1" type="text">
+		</div>
+
+		<div>
+			num2: <input id="num2" type="text">
+		</div>
+
+		<input id="somar" type="radio" name="operacao" checked> Somar
+		<input id="multiplicar" type="radio" name="operacao"> Multiplicar
+		<input id="subtrair" type="radio" name="operacao"> Subtrair
+		<input id="dividir" type="radio" name="operacao"> Dividir
+		
+		<br />
+		<button onclick="calcular()" >CALCULAR</button>
+		<br>
+		
+		resultado: <label id="resultado"></label>
+	</body>
+</html>

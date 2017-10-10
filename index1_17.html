@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercicio 17</title>
+	<script type="text/javascript">
+		function escrever(){
+			var numX = document.getElementById('num').value;
+			var textofinal = "";
+			if(numX<=0){
+				document.getElementById('texto').innerHTML = "";
+				window.alert('Valor inválido. Somente inteiros positivos!')
+			}
+
+			for (var i = 0; i < numX; i++) {
+				textofinal = textofinal + "Olá mundo!!"+"<br>";
+				document.getElementById('texto').innerHTML = textofinal;
+			};
+		}
+
+	</script>
+</head>
+<body>
+	<input type="number" id="num">
+	<button onclick="escrever()">Atualizar</button><br>
+	<label id="texto"></label>
+	
+</body>
+</html>
